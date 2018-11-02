@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <LinearLayout
+        android:id="@+id/lyTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:id="@+id/lyRatio"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@drawable/ratio43" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyFlash"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@drawable/flash" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@drawable/more" />
+
+            <ImageView
+                android:id="@+id/imTG"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyCamera"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@drawable/camera" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lyTop"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bgmore">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/timer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Timer"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/touch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Touch"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
